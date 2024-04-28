@@ -11,7 +11,7 @@ public class equipefoot {
 		
 		Scanner sc;
 		sc = new Scanner(System.in);
-		
+		//test github
 		System.out.print("Entrez votre âge : ");
 		int age = sc.nextInt();
 		
