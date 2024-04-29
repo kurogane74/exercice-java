@@ -18,17 +18,27 @@ public class elections {
 		System.out.print("pourcentage du candidat 4");
 		int candidat4 = sc.nextInt();
 		
-		if (candidat1 > 50) {
-			resultat = "Vous étes elu!";
+		if ((candidat1 + candidat2 + candidat3 + candidat4) <= 100) {
+			
+		
+		
+			if (candidat1 > 50) {
+				resultat = "Vous étes elu!";
+			}
+			else if (candidat1 < 12.5) {
+				resultat = "Vous avez perdu!";
+			}
+			else if ((candidat1 > candidat2) && (candidat1 > candidat3) && (candidat1 > candidat4)) {
+				resultat = "Vous étes au deuxieme tour avec avantage";
+			}
+			else if ((candidat1 < candidat2) || (candidat1 < candidat3) || (candidat1 < candidat4)) {
+				resultat = "Vous étes au deuxieme tour";
+			}
+			
 		}
-		else if (candidat1 < 12.5) {
-			resultat = "Vous avez perdu!";
-		}
-		else if ((candidat1 > candidat2) && (candidat1 > candidat3) && (candidat1 > candidat4) && (candidat1 < 50)) {
-			resultat = "Vous étes au deuxieme tour avec avantage";
-		}
-		else if ((candidat1 < candidat2) || (candidat1 < candidat3) || (candidat1 < candidat4)) {
-			resultat = "Vous étes au deuxieme tour";
+		
+		else {
+			resultat = "y a un soucie";
 		}
 		
 		System.out.print(resultat);
