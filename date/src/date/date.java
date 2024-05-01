@@ -14,21 +14,27 @@ public class date {
 		int mois = sc.nextInt();
 		System.out.println("Quelle année somme nous? ");
 		int annee = sc.nextInt();
+		String affichage_date = null;
 
 		/*mois a 31 jours : janvier1 mars3 mai5 juillet7 aout8 octobre10 decembre12 */
 
 			if (jour > 31 || mois > 12) {
-				System.out.println("Date invalide");
+				affichage_date = "Date invalide";
 			}
+			else if (jour > 30) {
 			switch(mois) {
 				case 4, 6, 9, 11:
-				if (jour > 30) {
-					System.out.println("Date invalide");
-				}
+				
+					affichage_date = "Date invalide";
+				
 				break;
 			}
+			}
+			else {
 
-			System.out.println("Nous somme le " +jour+ "/" +mois+ "/" +annee);
+			affichage_date = "Nous somme le " +jour+ "/" +mois+ "/" +annee;
+			}
+			System.out.println(affichage_date);
 
 	}
 
