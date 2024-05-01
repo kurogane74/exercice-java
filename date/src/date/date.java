@@ -36,6 +36,8 @@ public class date {
 			}
 			System.out.println(affichage_date);
 
+			sc.close();
+
 	}
 
 }
