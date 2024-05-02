@@ -61,23 +61,28 @@ public class assurance {
         }
         switch(valeur_tarif) {
             case 1:
-            tarif = "refuse";
+            //tarif = "refuse";
+            System.out.print("L'assurance refuse de vous assurer");
             break;
             case 2:
-            tarif = "rouge";
+            //tarif = "rouge";
+            System.out.print("Vous êtes au tarif rouge");
             break;
             case 3:
-            tarif = "orange";
+            //tarif = "orange";
+            System.out.print("Vous êtes au tarif orange");
             break;
             case 4:
-            tarif = "vert";
+            //tarif = "vert";
+            System.out.print("Vous êtes au tarif vert");
             break;
             case 5:
-            tarif = "bleu";
+            //tarif = "bleu";
+            System.out.print("Vous êtes au tarif bleu");
             break;
         }
        
-        System.out.print(tarif);
+        //System.out.print(tarif);
 		
 	}
 
