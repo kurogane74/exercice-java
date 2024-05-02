@@ -16,7 +16,7 @@ public class assurance {
         int accident = sc.nextInt();
         System.out.print("Fidelite");
         int fidelite = sc.nextInt();
-        int valeur_tarif = 0;
+        int valeur_tarif = 0; //1 = refuse, 2=rouge, 3=orange, 4=vert, 5=bleu
         String tarif = null;
        
         if (age < 25 && permis < 2 && accident < 0) {
