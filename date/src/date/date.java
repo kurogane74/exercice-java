@@ -15,10 +15,13 @@ public class date {
 		System.out.println("Quelle année somme nous? ");
 		int annee = sc.nextInt();
 		String affichage_date = null;
+		int modulo = 0;
+		
+		modulo = annee % 4;
 
 		/*mois a 31 jours : janvier1 mars3 mai5 juillet7 aout8 octobre10 decembre12 */
 
-			if (jour > 31 || mois > 12) {
+			if (jour < 1 || jour > 31 || mois < 1 || mois > 12) {
 				affichage_date = "Date invalide";
 			}
 			else if (jour > 30) {
@@ -29,6 +32,9 @@ public class date {
 				
 				break;
 			}
+			}
+			else if (mois == 2 && ((modulo == 0 && jour > 29) || (modulo != 0 && jour > 28))) {
+				affichage_date = "Date invalide";
 			}
 			else {
 
