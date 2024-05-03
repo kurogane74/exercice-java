@@ -17,6 +17,7 @@ public class nombresuivantfor {
 			System.out.println(nombre);
 		}
 
+		sc.close();
 	}
 
 }

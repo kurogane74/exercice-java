@@ -20,6 +20,7 @@ public class nombresuivantwhile {
 			System.out.println(nombre);
 		}
 
+		sc.close();
 	}
 
 }
