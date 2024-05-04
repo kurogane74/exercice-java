@@ -25,8 +25,8 @@ public class courses {
 		for (int z = 1; z <= np; z++) {
 			factorielnp *= z;
 		}
-		System.out.println(factorieln / factorielnp);
-		System.out.println(factorieln / (factorielp * factorielnp));
+		System.out.println("Dans l'ordre : 1 chance sur " +factorieln / factorielnp+ " de gagner.");
+		System.out.println("Dans le desordre : 1 chance sur " +factorieln / (factorielp * factorielnp)+ " de gagner");
 
 		sc.close();
 	}
