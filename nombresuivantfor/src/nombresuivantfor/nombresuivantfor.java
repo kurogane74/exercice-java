@@ -10,11 +10,11 @@ public class nombresuivantfor {
 		int nombre;
 		System.out.println("entrez un nombre");
 		nombre = sc.nextInt();
-		System.out.println("Les nombres aprés " +nombre+ " sont :");
+		System.out.print("Les nombres aprés " +nombre+ " sont : ");
 		nombre++;
 
 		for (int i = 0; i < 10; i++, nombre++) {
-			System.out.println(nombre);
+			System.out.print(nombre+ ", ");
 		}
 
 		sc.close();
